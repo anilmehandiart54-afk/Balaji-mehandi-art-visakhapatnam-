@@ -14,25 +14,40 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#fffaf5;
+background:#fff8f2;
 color:#333;
 line-height:1.6;
 }
 
 header{
-background:#7b2d26;
-color:white;
-padding:40px 20px;
+background:linear-gradient(135deg,#8B0000,#d35400);
+color:#fff;
 text-align:center;
+padding:60px 20px;
 }
 
 header h1{
-font-size:34px;
+font-size:38px;
+margin-bottom:10px;
 }
 
 header p{
-margin-top:10px;
-font-size:18px;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:#25D366;
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.btn2{
+background:#007BFF;
 }
 
 section{
@@ -42,23 +57,36 @@ margin:auto;
 }
 
 h2{
-color:#7b2d26;
+text-align:center;
+color:#8B0000;
 margin-bottom:20px;
+font-size:32px;
+}
+
+.about{
+font-size:18px;
+text-align:center;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+gap:20px;
+margin-top:25px;
 }
 
 .card{
-background:white;
+background:#fff;
 padding:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 text-align:center;
 font-weight:bold;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .gallery{
@@ -69,106 +97,36 @@ gap:20px;
 
 .gallery img{
 width:100%;
-border-radius:12px;
-}
-
-.review{
-background:#fff;
-padding:15px;
-margin:15px 0;
-border-left:5px solid #7b2d26;
-}
-
-.contact{
-background:#7b2d26;
-color:white;
-padding:30px;
-border-radius:10px;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
+border-radius:15px;
+box-shadow:0 5px 12px rgba(0,0,0,.25);
 }
 </style>
-
 </head>
-<!-- Gallery -->
-<section>
-<h2>Gallery</h2>
 
-<div class="gallery">
-<img src="bridal_hand.jpg" alt="Bridal Mehndi">
-<img src="bridal_feet.jpg" alt="Feet Mehndi">
-<img src="couple_mehndi.webp" alt="Couple Mehndi">
-<img src="mehndi_session.jpg" alt="Mehndi Session">
-<img src="artist_work.webp" alt="Artist Work">
-</div>
-</section>
-
-<!-- Contact -->
-<section class="contact">
-<h2>Contact Us</h2>
-
-<p>📞 <b>Call:</b> <a href="tel:9412057234">9412057234</a></p>
-
-<p>💬 <b>WhatsApp:</b>
-<a href="https://wa.me/919412057234" target="_blank">
-Chat on WhatsApp
-</a>
-</p>
-
-<p>📍 <b>Address:</b><br>
-Balaji Mehandi Art Visakhapatnam<br>
-Andhra Pradesh
-</p>
-
-<p>
-<a href="https://maps.google.com/?q=Balaji+Mehandi+Art+Visakhapatnam" target="_blank">
-📍 Open Google Maps
-</a>
-</p>
-</section>
-
-<!-- Floating Buttons -->
-
-<a href="tel:9412057234"
-style="position:fixed;bottom:90px;right:20px;background:#007bff;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999;">
-📞 Call Now
-</a>
-
-<a href="https://wa.me/919412057234"
-target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999;">
-💬 WhatsApp
-</a>
-
-<footer style="background:#222;color:#fff;text-align:center;padding:20px;margin-top:40px;">
-© 2026 Balaji Mehandi Art Visakhapatnam. All Rights Reserved.
-</footer>
-
-</body>
-</html>
 <body>
 
 <header>
 
-<h1>Balaji Mehandi Art Visakhapatnam</h1>
+<h1>🌿 Balaji Mehandi Art Visakhapatnam 🌿</h1>
 
-<p>Beautiful Mehndi Designs for Every Occasion</p>
+<p>Professional Bridal • Arabic • Royal • Traditional Mehndi Artist</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/919412057234">💬 WhatsApp Now</a>
+
+<a class="btn btn2" href="tel:9412057234">📞 Call Now</a>
 
 </header>
 
 <section>
 
-<h2>About Us</h2>
+<h2>Welcome</h2>
 
-<p>
+<p class="about">
 Welcome to Balaji Mehandi Art Visakhapatnam.
-We create beautiful Bridal, Arabic, Royal and Traditional Mehndi Designs for Weddings, Engagements, Baby Shower, Festivals and Parties.
+We provide beautiful Bridal, Arabic, Royal, Rajasthani, Traditional and Party Mehndi Designs with professional finishing.
+Customer satisfaction is our first priority.
 </p>
 
 </section>
@@ -189,14 +147,197 @@ We create beautiful Bridal, Arabic, Royal and Traditional Mehndi Designs for Wed
 
 <div class="card">Traditional Mehndi</div>
 
-<div class="card">Engagement Mehndi</div>
-
 <div class="card">Festival Mehndi</div>
+
+<div class="card">Engagement Mehndi</div>
 
 <div class="card">Party Mehndi</div>
 
-<div class="card">Kids Mehndi</div>
+</div>
+
+</section><section>
+
+<h2>Mehndi Gallery</h2>
+
+<div class="gallery">
+<img src="bridal_hand.jpg" alt="Bridal Mehndi">
+<img src="bridal_feet.jpg" alt="Feet Mehndi">
+<img src="couple_mehndi.webp" alt="Couple Mehndi">
+<img src="mehndi_session.jpg" alt="Mehndi Session">
+<img src="artist_work.webp" alt="Artist Work">
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p><b>📞 Phone:</b> <a href="tel:9412057234" style="color:white;">9412057234</a></p>
+
+<p><b>💬 WhatsApp:</b> <a href="https://wa.me/919412057234" target="_blank" style="color:white;">Chat Now</a></p>
+
+<p><b>📍 Address:</b><br>
+46 Showroom Bata 13,<br>
+VIP Rd, Asilmetta,<br>
+Visakhapatnam,<br>
+Andhra Pradesh 530016
+</p>
+
+<p>
+<a href="https://maps.google.com/?q=46+Showroom+Bata+13+VIP+Road+Asilmetta+Visakhapatnam+530016"
+target="_blank"
+style="color:#FFD700;">
+📍 Open in Google Maps
+</a>
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Balaji Mehandi Art Visakhapatnam</p>
+
+<p>Professional Bridal • Arabic • Royal Mehndi Artist</p>
+
+</footer>
+
+<!-- Floating Buttons -->
+
+<a href="tel:9412057234"
+style="position:fixed;bottom:90px;right:20px;background:#007BFF;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999;">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919412057234"
+target="_blank"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999;">
+💬 WhatsApp
+</a>
+
+</body>
+</html><section>
+
+<h2>⭐ Why Choose Balaji Mehandi Art?</h2>
+
+<div class="services">
+
+<div class="card">✅ 10+ Years Experience</div>
+
+<div class="card">✅ Bridal Mehndi Specialist</div>
+
+<div class="card">✅ Home Service Available</div>
+
+<div class="card">✅ Premium Mehndi Cones</div>
+
+<div class="card">✅ Affordable Price</div>
+
+<div class="card">✅ 100% Customer Satisfaction</div>
 
 </div>
+
+</section>
+
+<section>
+
+<h2>⭐⭐⭐⭐⭐ Customer Reviews</h2>
+
+<div class="review">
+<p><b>Priya:</b> "Amazing Bridal Mehndi Design. Very professional work."</p>
+</div>
+
+<div class="review">
+<p><b>Anjali:</b> "Beautiful Arabic Mehndi. Highly recommended."</p>
+</div>
+
+<div class="review">
+<p><b>Neha:</b> "Very neat and creative designs. Thank you Balaji Mehandi Art."</p>
+</div>
+
+</section>
+
+<section style="text-align:center;">
+
+<h2>Book Your Appointment</h2>
+
+<p>Call or WhatsApp us today to book your Mehndi service.</p>
+
+<br>
+
+<a href="tel:9412057234"
+style="background:#007BFF;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:18px;margin-right:10px;">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919412057234"
+target="_blank"
+style="background:#25D366;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:18px;">
+💬 WhatsApp Now
+</a>
+
+</section><!-- Hero Banner -->
+
+<section style="background:#fff3e6;padding:50px 20px;text-align:center;">
+
+<h2 style="font-size:36px;color:#8B0000;">
+🌿 Best Bridal Mehndi Artist in Visakhapatnam 🌿
+</h2>
+
+<p style="font-size:20px;margin-top:15px;">
+Professional Bridal, Arabic, Royal & Traditional Mehndi Designs
+</p>
+
+<br>
+
+<a href="tel:9412057234"
+style="background:#007BFF;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:18px;margin:8px;display:inline-block;">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919412057234"
+target="_blank"
+style="background:#25D366;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:18px;margin:8px;display:inline-block;">
+💬 WhatsApp Now
+</a>
+
+</section>
+
+<!-- Highlights -->
+
+<section>
+
+<h2>Why Customers Love Us</h2>
+
+<div class="services">
+
+<div class="card">⭐ Premium Mehndi Designs</div>
+
+<div class="card">💍 Bridal Mehndi Expert</div>
+
+<div class="card">🏠 Home Service Available</div>
+
+<div class="card">🎉 Wedding & Festival Booking</div>
+
+<div class="card">⏰ Fast & Neat Work</div>
+
+<div class="card">😊 Friendly Service</div>
+
+</div>
+
+</section>
+
+<!-- Timing -->
+
+<section style="background:#f8f8f8;border-radius:15px;padding:30px;">
+
+<h2>Business Hours</h2>
+
+<p style="text-align:center;font-size:18px;">
+🕘 Monday - Sunday
+</p>
+
+<p style="text-align:center;font-size:22px;font-weight:bold;color:#8B0000;">
+09:00 AM – 09:00 PM
+</p>
 
 </section>
